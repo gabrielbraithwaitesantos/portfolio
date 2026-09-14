@@ -1169,8 +1169,9 @@ footer .foot-links a:hover {
    card fechar, que ignora mouseenter disparado pelo próprio reflow. */
 .project-card-expand {
   display: grid;
-  grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr);
+  grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr);
   gap: 1.5rem;
+  align-items: start;
   max-height: 0;
   opacity: 0;
   overflow: hidden;
@@ -1184,7 +1185,7 @@ footer .foot-links a:hover {
    do CSS. Isso evita que rolar a página com a roda do mouse "esbarre" no
    card e abra o painel sem querer, empurrando o scroll no meio do gesto. */
 .project-card.project-card-open .project-card-expand {
-  max-height: 360px;
+  max-height: 400px;
   opacity: 1;
   margin-top: 1.75rem;
 }
@@ -1202,7 +1203,7 @@ footer .foot-links a:hover {
   display: grid;
   grid-template-columns: minmax(0, 1.8fr) minmax(0, 0.8fr);
   gap: 0.75rem;
-  align-items: stretch;
+  align-items: start;
 }
 
 .media-item {
@@ -1236,15 +1237,17 @@ footer .foot-links a:hover {
   aspect-ratio: 16 / 10;
 }
 
+/* as miniaturas acompanham a altura do vídeo ao lado, sem esticar junto
+   com a coluna de texto (que agora é bem mais alta que antes) */
 .media-thumbs {
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
-  height: 100%;
 }
 
 .media-thumb {
   flex: 1;
+  min-height: 0;
 }
 
 .media-placeholder {
@@ -1270,6 +1273,10 @@ footer .foot-links a:hover {
 .project-card-expand-text {
   border-left: 1px dashed var(--border);
   padding-left: 1.5rem;
+  /* o painel tem altura fixa (ver .project-card-open acima); o texto rola
+     dentro dela em vez de ser cortado quando é mais longo */
+  max-height: 400px;
+  overflow-y: auto;
 }
 
 .project-card-expand.text-only {
@@ -1283,10 +1290,10 @@ footer .foot-links a:hover {
 
 .extra-placeholder {
   display: block;
-  font-size: 0.85rem;
+  font-size: 0.82rem;
   color: var(--text-dim);
-  opacity: 0.75;
-  line-height: 1.65;
+  opacity: 0.95;
+  line-height: 1.6;
   transition: opacity 0.3s ease;
 }
 

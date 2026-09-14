@@ -54,7 +54,7 @@
               <span class="status-badge progress">em andamento</span>
             </div>
             <h3>SafePrompt</h3>
-            <p class="role">Meu papel: desenvolvimento do projeto</p>
+            <p class="role">Projeto em grupo — quatro pessoas no desenvolvimento</p>
             <p class="desc">
               Projeto desktop desenvolvido inicialmente para o PIBEP (programa de pesquisa) da PUCPR.
               A ideia central é sanitizar dados sensíveis, relacionado a LGPD e privacidade.
@@ -80,8 +80,15 @@
               </div>
             </div>
             <div class="project-card-expand-text">
-              <!-- Mais detalhes do projeto aqui — texto extra que só aparece no hover -->
-              <span class="extra-placeholder mono">mais detalhes em breve</span>
+              <span class="extra-placeholder">
+                Backend em Python/FastAPI que acha dados sensíveis por regex e spaCy, tudo na própria
+                máquina — a IA (Gemini) só entra no chat, já sobre o texto anonimizado. Troca nomes,
+                CPFs, e-mails e endereços por substitutos, e guarda o mapeamento para desfazer a
+                troca depois, junto com um log de auditoria. Um painel mostra a origem de cada
+                trecho: escrito pelo usuário, anonimizado ali ou gerado pelo modelo. DOCX é o
+                formato que funciona; os outros ainda estão em desenvolvimento. App em Kotlin
+                Multiplatform com Compose.
+              </span>
             </div>
           </div>
         </article>
@@ -175,8 +182,16 @@
               </div>
             </div>
             <div class="project-card-expand-text">
-              <!-- Mais detalhes do projeto aqui — texto extra que só aparece no hover -->
-              <span class="extra-placeholder mono">mais detalhes em breve</span>
+              <span class="extra-placeholder">
+                Site hospedado no Firebase, com um chat que entende linguagem natural: escrevo
+                "prova de física sexta às 14h" e ele cria a tarefa, inclusive com recorrência.
+                Também monta plano de estudos para provas, lê anexos (print de horário, PDF de
+                ementa) e vira tarefa. Além do calendário e das tarefas, tem controle de provas e
+                alertas — academia e culinária ainda estou fazendo. Roda um modelo aberto
+                (gpt-oss-120b) na Groq, chamado por uma função no servidor para a chave não ficar
+                exposta no frontend. Por padrão ele propõe e espera confirmação antes de mexer na
+                agenda.
+              </span>
             </div>
           </div>
         </article>
@@ -207,8 +222,12 @@
               </div>
             </div>
             <div class="project-card-expand-text">
-              <!-- Mais detalhes do projeto aqui — texto extra que só aparece no hover -->
-              <span class="extra-placeholder mono">mais detalhes em breve</span>
+              <span class="extra-placeholder">
+                Feito em React Native com Expo, roda como app no celular e também como site. Tem
+                trilhas de estudo por matéria, quiz com provas separadas por ano do vestibular,
+                biblioteca de materiais, aulas em vídeo, calendário de rotina e acompanhamento de
+                progresso no perfil. Login com Firebase Auth, incluindo entrada pelo Google.
+              </span>
             </div>
           </div>
         </article>
@@ -222,7 +241,8 @@
             </div>
             <h3>Voxen</h3>
             <p class="desc">
-              Plataforma que desenvolvi com um amigo para ajudar pessoas a aprender inglês.
+              Plataforma de comunidade em inglês que desenvolvi com um amigo: ele dá as aulas,
+              eu construí o site.
             </p>
           </div>
                   <div class="project-card-expand" aria-hidden="true">
@@ -240,8 +260,13 @@
               </div>
             </div>
             <div class="project-card-expand-text">
-              <!-- Mais detalhes do projeto aqui — texto extra que só aparece no hover -->
-              <span class="extra-placeholder mono">mais detalhes em breve</span>
+              <span class="extra-placeholder">
+                Uma comunidade em inglês, com aulas e mentoria: meu amigo cuida do conteúdo e das
+                aulas, eu fiz a plataforma inteira. Tem criação de perfil e login, trilhas de
+                conteúdo por área, chat, conquistas, agendamento de chamadas em grupo e individuais,
+                galeria e avisos. Feito em Next.js com Firebase para conta, banco e arquivos, e
+                Tailwind com Radix para a interface.
+              </span>
             </div>
           </div>
         </article>
@@ -274,8 +299,14 @@
               </div>
             </div>
             <div class="project-card-expand-text">
-              <!-- Mais detalhes do projeto aqui — texto extra que só aparece no hover -->
-              <span class="extra-placeholder mono">mais detalhes em breve</span>
+              <span class="extra-placeholder">
+                Funciona como um Synthesia: busco uma música, ele acha o vídeo no YouTube e um
+                arquivo MIDI correspondente, lê as notas do MIDI e faz elas caírem até acender a
+                tecla certa no piano da tela. Essa busca foi a parte mais trabalhosa — é uma função
+                no servidor que consulta a API do YouTube e vasculha sites atrás do MIDI. Como o
+                MIDI e o áudio são fontes separadas, tem um ajuste de sincronia para alinhar os
+                dois. Também dá para carregar MIDI e MP3 próprios, sem passar pela busca.
+              </span>
             </div>
           </div>
         </article>
