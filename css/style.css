@@ -1301,9 +1301,23 @@ footer .foot-links a:hover {
   contain: layout;
 }
 
-@media (max-width: 700px) {
-  .project-card-expand {
+/* Em touch não existe hover, e o interactions.js (que aplica
+   .project-card-open) é desligado nesses aparelhos — sem isto o painel
+   ficaria fechado para sempre e o texto do projeto nunca apareceria.
+   Aqui ele fica sempre aberto, empilhado abaixo do card.
+   A largura sozinha não basta: um iPad em retrato tem 820px e cairia de
+   fora, então a regra também vale para qualquer aparelho sem hover. */
+@media (max-width: 780px), (hover: none), (pointer: coarse) {
+  .project-card .project-card-expand,
+  .project-card.project-card-open .project-card-expand,
+  .project-card.project-card-open .project-card-expand.text-only,
+  .project-card.project-card-open .project-card-expand.text-only.text-only-narrow {
     grid-template-columns: 1fr;
+    max-height: none;
+    opacity: 1;
+    overflow: visible;
+    margin-top: 1.5rem;
+    transition: none;
   }
 
   .project-card-expand-media {
@@ -1319,6 +1333,8 @@ footer .foot-links a:hover {
     border-top: 1px dashed var(--border);
     padding-left: 0;
     padding-top: 1rem;
+    max-height: none;
+    overflow: visible;
   }
 }
 

@@ -7,6 +7,23 @@
   var isTouch = window.matchMedia('(hover: none), (pointer: coarse)').matches;
   var prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
+  /* Abaixo de 780px o painel do projeto fica sempre aberto via CSS (não há
+     hover no celular). O aria-hidden do HTML vale para o painel fechado do
+     desktop; com ele visível, precisa sair, senão o texto do projeto existe
+     na tela mas não para quem usa leitor de tela. */
+  var mobilePanel = window.matchMedia('(max-width: 780px), (hover: none), (pointer: coarse)');
+
+  function syncPanelAria() {
+    var alwaysOpen = mobilePanel.matches;
+    document.querySelectorAll('.project-card-expand').forEach(function (panel) {
+      if (alwaysOpen) panel.removeAttribute('aria-hidden');
+      else panel.setAttribute('aria-hidden', 'true');
+    });
+  }
+
+  syncPanelAria();
+  if (mobilePanel.addEventListener) mobilePanel.addEventListener('change', syncPanelAria);
+
   if (isTouch || prefersReducedMotion) return;
 
   /* ---------- Botões magnéticos ---------- */
