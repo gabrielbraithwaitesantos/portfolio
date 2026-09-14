@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfólio — Gabriel Braithwaite Felipe dos Santos</title>
+  <meta name="description" content="Portfólio de projetos técnicos de Gabriel Braithwaite Felipe dos Santos: SafePrompt, PIBITI, artigo acadêmico e projetos pessoais." />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/animations.css" />
+</head>
+<body>
+
+  <nav class="site-nav">
+    <div class="wrap">
+      <a href="../index.html" class="brand">Gabriel <span>Braithwaite</span></a>
+      <ul class="nav-links">
+        <li><a href="../index.html">Início</a></li>
+        <li><a href="index.html" class="active">Portfólio</a></li>
+        <li><a href="../criacoes/index.html">Criações</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="page-head">
+    <div class="wrap">
+      <span class="kicker mono">01 — técnico</span>
+      <h1>Portfólio de Projetos</h1>
+      <p>
+        Projetos de pesquisa, projetos pessoais e um artigo em desenvolvimento. Alguns concluídos,
+        outros em andamento, alguns não finalizados — todos marcados como estão.
+      </p>
+    </div>
+  </header>
+
+  <section>
+    <div class="wrap">
+      <div class="project-grid" data-reveal-group>
+
+        <!--
+          Cada card abre um painel embaixo no hover (.project-card-expand),
+          com largura total — dá espaço de verdade pra fotos e vídeos.
+          Duas colunas dentro do painel: mídia à esquerda (maior),
+          texto extra à direita. Para usar mídia real, troque os
+          placeholders dentro de .project-card-expand-media por
+          <img src="../assets/images/projects/....jpg"> ou
+          <video src="../assets/videos/projects/....mp4" controls>.
+        -->
+
+        <!-- SafePrompt — destaque -->
+        <article class="project-card featured" data-reveal>
+          <div class="project-card-body">
+            <div class="card-top">
+              <span class="tag">PIBEP · PUCPR</span>
+              <span class="status-badge progress">em andamento</span>
+            </div>
+            <h3>SafePrompt</h3>
+            <p class="role">Meu papel: desenvolvimento do projeto</p>
+            <p class="desc">
+              Projeto desktop desenvolvido inicialmente para o PIBEP (programa de pesquisa) da PUCPR.
+              A ideia central é sanitizar dados sensíveis, relacionado a LGPD e privacidade.
+            </p>
+            <div class="tech-tags">
+              <span>desktop</span>
+              <span>privacidade</span>
+              <span>LGPD</span>
+            </div>
+          </div>
+                  <div class="project-card-expand" aria-hidden="true">
+            <div class="project-card-expand-media">
+              <button type="button" class="media-item media-video" data-media-group="safeprompt" data-media-index="0">
+                <video src="../assets/videos/projects/safeprompt.mp4" muted loop playsinline preload="metadata"></video>
+              </button>
+              <div class="media-thumbs">
+                <button type="button" class="media-item media-thumb" data-media-group="safeprompt" data-media-index="1">
+                  <img src="../assets/images/projects/safeprompt-1.jpg" alt="Print do projeto SafePrompt">
+                </button>
+                <button type="button" class="media-item media-thumb" data-media-group="safeprompt" data-media-index="2">
+                  <img src="../assets/images/projects/safeprompt-2.jpg" alt="Print do projeto SafePrompt">
+                </button>
+              </div>
+            </div>
+            <div class="project-card-expand-text">
+              <!-- Mais detalhes do projeto aqui — texto extra que só aparece no hover -->
+              <span class="extra-placeholder mono">mais detalhes em breve</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- PIBITI — destaque -->
+        <article class="project-card featured" data-reveal>
+          <div class="project-card-body">
+            <div class="card-top">
+              <span class="tag">PIBITI · PUCPR</span>
+              <span class="status-badge progress">em andamento</span>
+            </div>
+            <h3>PIBITI — Formação WA</h3>
+            <p class="role">Meu papel: pesquisa e desenvolvimento</p>
+            <p class="desc">
+              Projeto de pesquisa PIBITI da PUCPR, com título oficial "Modelagem e prototipagem de
+              protocolo técnico-pedagógico seguro para uso do WhatsApp como ambiente virtual de
+              aprendizagem na formação docente on-line". Uma plataforma/protocolo que usa o WhatsApp
+              como ambiente de ensino para formação de professores.
+            </p>
+            <div class="tech-tags">
+              <span>pesquisa</span>
+              <span>EAD</span>
+              <span>WhatsApp</span>
+            </div>
+          </div>
+                  <div class="project-card-expand text-only" aria-hidden="true">
+            <div class="project-card-expand-text">
+              <span class="extra-placeholder">
+                Pesquisa PIBITI vinculada à PUCPR, ainda em desenvolvimento. O foco é modelar e
+                prototipar um protocolo técnico-pedagógico seguro para uso do WhatsApp como ambiente
+                virtual de aprendizagem na formação docente on-line, unindo pesquisa em EAD com
+                cuidados técnicos de segurança.
+              </span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Artigo acadêmico — médio -->
+        <article class="project-card standard" data-reveal>
+          <div class="project-card-body">
+            <div class="card-top">
+              <span class="tag">Grupo de Estudos</span>
+              <span class="status-badge progress">em andamento</span>
+            </div>
+            <h3>Artigo acadêmico</h3>
+            <p class="role">Grupo de Estudos em Ciências Criminais, Tecnologia e afins</p>
+            <p class="desc">
+              "O uso da inteligência artificial para fins de antiforense digital: uma análise a
+              partir da manipulação de evidências audiovisuais e seus impactos na persecução penal."
+            </p>
+          </div>
+                  <div class="project-card-expand text-only text-only-narrow" aria-hidden="true">
+            <div class="project-card-expand-text">
+              <span class="extra-placeholder">
+                Pesquisa em andamento no Grupo de Estudos em Ciências Criminais, Tecnologia e afins,
+                investigando como técnicas de inteligência artificial podem ser usadas para fins de
+                antiforense digital — manipulando evidências audiovisuais de forma a comprometer sua
+                validade probatória — e quais os impactos disso na persecução penal. Ainda em
+                desenvolvimento.
+              </span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Agenda — médio -->
+        <article class="project-card standard" data-reveal>
+          <div class="project-card-body">
+            <div class="card-top">
+              <span class="tag">uso pessoal</span>
+              <span class="status-badge done">concluído</span>
+            </div>
+            <h3>Agenda</h3>
+            <p class="role">Projeto pessoal — uso no dia a dia</p>
+            <p class="desc">
+              Site que uso no dia a dia: uma IA que me ajuda a me organizar no calendário.
+              É o projeto que mais uso pessoalmente.
+            </p>
+          </div>
+                  <div class="project-card-expand" aria-hidden="true">
+            <div class="project-card-expand-media">
+              <button type="button" class="media-item media-video" data-media-group="agenda" data-media-index="0">
+                <video src="../assets/videos/projects/agenda.mp4" muted loop playsinline preload="metadata"></video>
+              </button>
+              <div class="media-thumbs">
+                <button type="button" class="media-item media-thumb" data-media-group="agenda" data-media-index="1">
+                  <img src="../assets/images/projects/agenda-1.jpg" alt="Print do projeto Agenda">
+                </button>
+                <button type="button" class="media-item media-thumb" data-media-group="agenda" data-media-index="2">
+                  <img src="../assets/images/projects/agenda-2.jpg" alt="Print do projeto Agenda">
+                </button>
+              </div>
+            </div>
+            <div class="project-card-expand-text">
+              <!-- Mais detalhes do projeto aqui — texto extra que só aparece no hover -->
+              <span class="extra-placeholder mono">mais detalhes em breve</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Aprender Mais -->
+        <article class="project-card standard" data-reveal>
+          <div class="project-card-body">
+            <div class="card-top">
+              <span class="tag">educação</span>
+              <span class="status-badge progress">em andamento</span>
+            </div>
+            <h3>Aprender Mais</h3>
+            <p class="role">Projeto pessoal</p>
+            <p class="desc">App para ajudar pessoas a estudarem para o vestibular.</p>
+          </div>
+                  <div class="project-card-expand" aria-hidden="true">
+            <div class="project-card-expand-media">
+              <button type="button" class="media-item media-video" data-media-group="aprendermais" data-media-index="0">
+                <video src="../assets/videos/projects/aprendermais.mp4" muted loop playsinline preload="metadata"></video>
+              </button>
+              <div class="media-thumbs">
+                <button type="button" class="media-item media-thumb" data-media-group="aprendermais" data-media-index="1">
+                  <img src="../assets/images/projects/aprendermais-1.jpg" alt="Print do projeto Aprender Mais">
+                </button>
+                <button type="button" class="media-item media-thumb" data-media-group="aprendermais" data-media-index="2">
+                  <img src="../assets/images/projects/aprendermais-2.jpg" alt="Print do projeto Aprender Mais">
+                </button>
+              </div>
+            </div>
+            <div class="project-card-expand-text">
+              <!-- Mais detalhes do projeto aqui — texto extra que só aparece no hover -->
+              <span class="extra-placeholder mono">mais detalhes em breve</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Voxen — leve/casual -->
+        <article class="project-card light" data-reveal>
+          <div class="project-card-body">
+            <div class="card-top">
+              <span class="tag">com um amigo</span>
+              <span class="status-badge progress">em andamento</span>
+            </div>
+            <h3>Voxen</h3>
+            <p class="desc">
+              Plataforma que desenvolvi com um amigo para ajudar pessoas a aprender inglês.
+            </p>
+          </div>
+                  <div class="project-card-expand" aria-hidden="true">
+            <div class="project-card-expand-media">
+              <button type="button" class="media-item media-video" data-media-group="voxen" data-media-index="0">
+                <video src="../assets/videos/projects/voxen.mp4" muted loop playsinline preload="metadata"></video>
+              </button>
+              <div class="media-thumbs">
+                <button type="button" class="media-item media-thumb" data-media-group="voxen" data-media-index="1">
+                  <img src="../assets/images/projects/voxen-1.jpg" alt="Print do projeto Voxen">
+                </button>
+                <button type="button" class="media-item media-thumb" data-media-group="voxen" data-media-index="2">
+                  <img src="../assets/images/projects/voxen-2.jpg" alt="Print do projeto Voxen">
+                </button>
+              </div>
+            </div>
+            <div class="project-card-expand-text">
+              <!-- Mais detalhes do projeto aqui — texto extra que só aparece no hover -->
+              <span class="extra-placeholder mono">mais detalhes em breve</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- PianoSync — leve/casual -->
+        <article class="project-card light" data-reveal>
+          <div class="project-card-body">
+            <div class="card-top">
+              <span class="tag">projeto pessoal</span>
+              <span class="status-badge progress">em andamento</span>
+            </div>
+            <h3>PianoSync</h3>
+            <p class="desc">
+              Projeto pessoal para me ajudar a tocar piano e aprender música de ouvido.
+              Não foi finalizado, mas é um projeto que gosto muito.
+            </p>
+          </div>
+                  <div class="project-card-expand" aria-hidden="true">
+            <div class="project-card-expand-media">
+              <button type="button" class="media-item media-video" data-media-group="pianosync" data-media-index="0">
+                <video src="../assets/videos/projects/pianosync.mp4" muted loop playsinline preload="metadata"></video>
+              </button>
+              <div class="media-thumbs">
+                <button type="button" class="media-item media-thumb" data-media-group="pianosync" data-media-index="1">
+                  <img src="../assets/images/projects/pianosync-1.jpg" alt="Print do projeto PianoSync">
+                </button>
+                <button type="button" class="media-item media-thumb" data-media-group="pianosync" data-media-index="2">
+                  <img src="../assets/images/projects/pianosync-2.jpg" alt="Print do projeto PianoSync">
+                </button>
+              </div>
+            </div>
+            <div class="project-card-expand-text">
+              <!-- Mais detalhes do projeto aqui — texto extra que só aparece no hover -->
+              <span class="extra-placeholder mono">mais detalhes em breve</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="certificacoes">
+    <div class="wrap">
+      <div class="section-head" data-reveal>
+        <span class="kicker">certificações e formações</span>
+        <h2>O que venho estudando pelo caminho</h2>
+        <p>Workshops, eventos e formações que já fiz — clique em qualquer certificado para ver o PDF completo.</p>
+      </div>
+
+      <!--
+        Galeria em esteira: os cards pequenos deslizam sozinhos, sem parar
+        (efeito marquee, controlado via js/marquee.js). A sequência de cards
+        aparece duas vezes seguidas no HTML (grupo A + grupo B idênticos)
+        para o loop fechar sem emenda visível. Passar o mouse desacelera o
+        movimento (não pausa). Também aceita arraste (mouse/touch) com
+        inércia. Clicar num card abre a imagem em um lightbox na página.
+        Para adicionar um certificado novo: acrescente o mesmo bloco
+        <button class="cert-card"> dentro dos DOIS grupos (idênticos), com
+        a imagem em assets/images/certificates/.
+      -->
+      <div class="cert-marquee-wrap" data-reveal>
+        <span class="cert-drag-hint mono"><i>↔</i> arraste para navegar</span>
+        <div class="cert-marquee">
+        <div class="cert-track">
+          <div class="cert-group-set">
+            <button type="button" class="cert-card" data-pdf="../assets/certificates/workshop-soldagem-2026-05-30.pdf">
+              <img src="../assets/images/certificates/workshop-soldagem-2026-05-30.jpg" alt="Certificado: Workshop Soldagem" loading="lazy" draggable="false" />
+              <span class="cert-card-caption">
+                <span class="cert-name">Workshop Soldagem</span>
+                <span class="cert-meta mono">30/05/2026</span>
+              </span>
+            </button>
+            <button type="button" class="cert-card" data-pdf="../assets/certificates/declaracao-presenca-abertura-pibep-2026-04-22.pdf">
+              <img src="../assets/images/certificates/declaracao-presenca-abertura-pibep-2026-04-22.jpg" alt="Certificado: Abertura do PIBEP" loading="lazy" draggable="false" />
+              <span class="cert-card-caption">
+                <span class="cert-name">Abertura do PIBEP (16ª edição)</span>
+                <span class="cert-meta mono">22/04/2026</span>
+              </span>
+            </button>
+            <button type="button" class="cert-card" data-pdf="../assets/certificates/workshop-impressao-3d-2026-05-30.pdf">
+              <img src="../assets/images/certificates/workshop-impressao-3d-2026-05-30.jpg" alt="Certificado: Workshop Impressão 3D" loading="lazy" draggable="false" />
+              <span class="cert-card-caption">
+                <span class="cert-name">Workshop Impressão 3D</span>
+                <span class="cert-meta mono">30/05/2026</span>
+              </span>
+            </button>
+            <button type="button" class="cert-card" data-pdf="../assets/certificates/declaracao-participacao-hotmilk-2026-04-28.pdf">
+              <img src="../assets/images/certificates/declaracao-participacao-hotmilk-2026-04-28.jpg" alt="Certificado: evento HOTMILK" loading="lazy" draggable="false" />
+              <span class="cert-card-caption">
+                <span class="cert-name">Bastidores de uma retailtech — HOTMILK</span>
+                <span class="cert-meta mono">28/04/2026</span>
+              </span>
+            </button>
+            <button type="button" class="cert-card" data-pdf="../assets/certificates/workshop-o-legado-continua-2026-05-30.pdf">
+              <img src="../assets/images/certificates/workshop-o-legado-continua-2026-05-30.jpg" alt="Certificado: Workshop O legado continua" loading="lazy" draggable="false" />
+              <span class="cert-card-caption">
+                <span class="cert-name">Workshop "O legado continua"</span>
+                <span class="cert-meta mono">30/05/2026</span>
+              </span>
+            </button>
+            <button type="button" class="cert-card" data-pdf="../assets/certificates/certificado-smart-city-expo-curitiba-2026-03.pdf">
+              <img src="../assets/images/certificates/certificado-smart-city-expo-curitiba-2026-03.jpg" alt="Certificado: Smart City Expo Curitiba" loading="lazy" draggable="false" />
+              <span class="cert-card-caption">
+                <span class="cert-name">Smart City Expo Curitiba</span>
+                <span class="cert-meta mono">25-27/03/2026</span>
+              </span>
+            </button>
+            <button type="button" class="cert-card" data-pdf="../assets/certificates/workshop-gerenciamento-projetos-cad-2026-05-23.pdf">
+              <img src="../assets/images/certificates/workshop-gerenciamento-projetos-cad-2026-05-23.jpg" alt="Certificado: Workshop Gerenciamento de Projetos em CAD" loading="lazy" draggable="false" />
+              <span class="cert-card-caption">
+                <span class="cert-name">Gerenciamento de Projetos em CAD</span>
+                <span class="cert-meta mono">23/05/2026</span>
+              </span>
+            </button>
+            <button type="button" class="cert-card" data-pdf="../assets/certificates/workshop-git-github-2026-04-07.pdf">
+              <img src="../assets/images/certificates/workshop-git-github-2026-04-07.jpg" alt="Certificado: Workshop de Git e GitHub" loading="lazy" draggable="false" />
+              <span class="cert-card-caption">
+                <span class="cert-name">Workshop de Git e GitHub</span>
+                <span class="cert-meta mono">07/04/2026</span>
+              </span>
+            </button>
+            <button type="button" class="cert-card" data-pdf="../assets/certificates/pucpr-acolhe-comunidade-pratica-ia-2026-03-26.pdf">
+              <img src="../assets/images/certificates/pucpr-acolhe-comunidade-pratica-ia-2026-03-26.jpg" alt="Certificado: Comunidade Prática de Inteligência Artificial" loading="lazy" draggable="false" />
+              <span class="cert-card-caption">
+                <span class="cert-name">Comunidade Prática de Inteligência Artificial</span>
+                <span class="cert-meta mono">26/03/2026</span>
+              </span>
+            </button>
+            <button type="button" class="cert-card" data-pdf="../assets/certificates/workshop-competicoes-regras-2026-05-23.pdf">
+              <img src="../assets/images/certificates/workshop-competicoes-regras-2026-05-23.jpg" alt="Certificado: Workshop Competições e Regras" loading="lazy" draggable="false" />
+              <span class="cert-card-caption">
+                <span class="cert-name">Workshop Competições e Regras</span>
+                <span class="cert-meta mono">23/05/2026</span>
+              </span>
+            </button>
+            <button type="button" class="cert-card" data-pdf="../assets/certificates/workshop-design-comunicacao-2026-05-23.pdf">
+              <img src="../assets/images/certificates/workshop-design-comunicacao-2026-05-23.jpg" alt="Certificado: Workshop Design e Comunicação" loading="lazy" draggable="false" />
+              <span class="cert-card-caption">
+                <span class="cert-name">Workshop Design &amp; Comunicação</span>
+                <span class="cert-meta mono">23/05/2026</span>
+              </span>
+            </button>
+            <button type="button" class="cert-card" data-pdf="../assets/certificates/senac-ingles-basico-1-2025-06-23.jpg">
+              <img src="../assets/images/certificates/senac-ingles-basico-1-2025-06-23.jpg" alt="Certificado: Inglês Básico I - Senac" loading="lazy" draggable="false" />
+              <span class="cert-card-caption">
+                <span class="cert-name">Inglês Básico I — Senac Paraná</span>
+                <span class="cert-meta mono">60h · 23/06/2025</span>
+              </span>
+            </button>
+            <button type="button" class="cert-card" data-pdf="../assets/certificates/senac-ingles-basico-2-2025-11-26.jpg">
+              <img src="../assets/images/certificates/senac-ingles-basico-2-2025-11-26.jpg" alt="Certificado: Inglês Básico II - Senac" loading="lazy" draggable="false" />
+              <span class="cert-card-caption">
+                <span class="cert-name">Inglês Básico II — Senac Paraná</span>
+                <span class="cert-meta mono">60h · 26/11/2025</span>
+              </span>
+            </button>
+            <button type="button" class="cert-card" data-pdf="../assets/certificates/senac-ingles-pre-intermediario-1-2026-07-06.jpg">
+              <img src="../assets/images/certificates/senac-ingles-pre-intermediario-1-2026-07-06.jpg" alt="Certificado: Inglês Pré-Intermediário I - Senac" loading="lazy" draggable="false" />
+              <span class="cert-card-caption">
+                <span class="cert-name">Inglês Pré-Intermediário I — Senac Paraná</span>
+                <span class="cert-meta mono">60h · 06/07/2026</span>
+              </span>
+            </button>
+          </div>
+
+          <!-- segunda cópia idêntica (mesma ordem intercalada), para o loop infinito não ter emenda visível -->
+          <div class="cert-group-set" aria-hidden="true">
+            <button type="button" class="cert-card" data-pdf="../assets/certificates/workshop-soldagem-2026-05-30.pdf" tabindex="-1">
+              <img src="../assets/images/certificates/workshop-soldagem-2026-05-30.jpg" alt="" loading="lazy" draggable="false" />
+              <span class="cert-card-caption">
+                <span class="cert-name">Workshop Soldagem</span>
+                <span class="cert-meta mono">30/05/2026</span>
+              </span>
+            </button>
+            <button type="button" class="cert-card" data-pdf="../assets/certificates/declaracao-presenca-abertura-pibep-2026-04-22.pdf" tabindex="-1">
+              <img src="../assets/images/certificates/declaracao-presenca-abertura-pibep-2026-04-22.jpg" alt="" loading="lazy" draggable="false" />
+              <span class="cert-card-caption">
+                <span class="cert-name">Abertura do PIBEP (16ª edição)</span>
+                <span class="cert-meta mono">22/04/2026</span>
+              </span>
+            </button>
+            <button type="button" class="cert-card" data-pdf="../assets/certificates/workshop-impressao-3d-2026-05-30.pdf" tabindex="-1">
+              <img src="../assets/images/certificates/workshop-impressao-3d-2026-05-30.jpg" alt="" loading="lazy" draggable="false" />
+              <span class="cert-card-caption">
+                <span class="cert-name">Workshop Impressão 3D</span>
+                <span class="cert-meta mono">30/05/2026</span>
+              </span>
+            </button>
+            <button type="button" class="cert-card" data-pdf="../assets/certificates/declaracao-participacao-hotmilk-2026-04-28.pdf" tabindex="-1">
+              <img src="../assets/images/certificates/declaracao-participacao-hotmilk-2026-04-28.jpg" alt="" loading="lazy" draggable="false" />
+              <span class="cert-card-caption">
+                <span class="cert-name">Bastidores de uma retailtech — HOTMILK</span>
+                <span class="cert-meta mono">28/04/2026</span>
+              </span>
+            </button>
+            <button type="button" class="cert-card" data-pdf="../assets/certificates/workshop-o-legado-continua-2026-05-30.pdf" tabindex="-1">
+              <img src="../assets/images/certificates/workshop-o-legado-continua-2026-05-30.jpg" alt="" loading="lazy" draggable="false" />
+              <span class="cert-card-caption">
+                <span class="cert-name">Workshop "O legado continua"</span>
+                <span class="cert-meta mono">30/05/2026</span>
+              </span>
+            </button>
+            <button type="button" class="cert-card" data-pdf="../assets/certificates/certificado-smart-city-expo-curitiba-2026-03.pdf" tabindex="-1">
+              <img src="../assets/images/certificates/certificado-smart-city-expo-curitiba-2026-03.jpg" alt="" loading="lazy" draggable="false" />
+              <span class="cert-card-caption">
+                <span class="cert-name">Smart City Expo Curitiba</span>
+                <span class="cert-meta mono">25-27/03/2026</span>
+              </span>
+            </button>
+            <button type="button" class="cert-card" data-pdf="../assets/certificates/workshop-gerenciamento-projetos-cad-2026-05-23.pdf" tabindex="-1">
+              <img src="../assets/images/certificates/workshop-gerenciamento-projetos-cad-2026-05-23.jpg" alt="" loading="lazy" draggable="false" />
+              <span class="cert-card-caption">
+                <span class="cert-name">Gerenciamento de Projetos em CAD</span>
+                <span class="cert-meta mono">23/05/2026</span>
+              </span>
+            </button>
+            <button type="button" class="cert-card" data-pdf="../assets/certificates/workshop-git-github-2026-04-07.pdf" tabindex="-1">
+              <img src="../assets/images/certificates/workshop-git-github-2026-04-07.jpg" alt="" loading="lazy" draggable="false" />
+              <span class="cert-card-caption">
+                <span class="cert-name">Workshop de Git e GitHub</span>
+                <span class="cert-meta mono">07/04/2026</span>
+              </span>
+            </button>
+            <button type="button" class="cert-card" data-pdf="../assets/certificates/pucpr-acolhe-comunidade-pratica-ia-2026-03-26.pdf" tabindex="-1">
+              <img src="../assets/images/certificates/pucpr-acolhe-comunidade-pratica-ia-2026-03-26.jpg" alt="" loading="lazy" draggable="false" />
+              <span class="cert-card-caption">
+                <span class="cert-name">Comunidade Prática de Inteligência Artificial</span>
+                <span class="cert-meta mono">26/03/2026</span>
+              </span>
+            </button>
+            <button type="button" class="cert-card" data-pdf="../assets/certificates/workshop-competicoes-regras-2026-05-23.pdf" tabindex="-1">
+              <img src="../assets/images/certificates/workshop-competicoes-regras-2026-05-23.jpg" alt="" loading="lazy" draggable="false" />
+              <span class="cert-card-caption">
+                <span class="cert-name">Workshop Competições e Regras</span>
+                <span class="cert-meta mono">23/05/2026</span>
+              </span>
+            </button>
+            <button type="button" class="cert-card" data-pdf="../assets/certificates/workshop-design-comunicacao-2026-05-23.pdf" tabindex="-1">
+              <img src="../assets/images/certificates/workshop-design-comunicacao-2026-05-23.jpg" alt="" loading="lazy" draggable="false" />
+              <span class="cert-card-caption">
+                <span class="cert-name">Workshop Design &amp; Comunicação</span>
+                <span class="cert-meta mono">23/05/2026</span>
+              </span>
+            </button>
+            <button type="button" class="cert-card" data-pdf="../assets/certificates/senac-ingles-basico-1-2025-06-23.jpg" tabindex="-1">
+              <img src="../assets/images/certificates/senac-ingles-basico-1-2025-06-23.jpg" alt="" loading="lazy" draggable="false" />
+              <span class="cert-card-caption">
+                <span class="cert-name">Inglês Básico I — Senac Paraná</span>
+                <span class="cert-meta mono">60h · 23/06/2025</span>
+              </span>
+            </button>
+            <button type="button" class="cert-card" data-pdf="../assets/certificates/senac-ingles-basico-2-2025-11-26.jpg" tabindex="-1">
+              <img src="../assets/images/certificates/senac-ingles-basico-2-2025-11-26.jpg" alt="" loading="lazy" draggable="false" />
+              <span class="cert-card-caption">
+                <span class="cert-name">Inglês Básico II — Senac Paraná</span>
+                <span class="cert-meta mono">60h · 26/11/2025</span>
+              </span>
+            </button>
+            <button type="button" class="cert-card" data-pdf="../assets/certificates/senac-ingles-pre-intermediario-1-2026-07-06.jpg" tabindex="-1">
+              <img src="../assets/images/certificates/senac-ingles-pre-intermediario-1-2026-07-06.jpg" alt="" loading="lazy" draggable="false" />
+              <span class="cert-card-caption">
+                <span class="cert-name">Inglês Pré-Intermediário I — Senac Paraná</span>
+                <span class="cert-meta mono">60h · 06/07/2026</span>
+              </span>
+            </button>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox: abre a imagem do certificado em tamanho grande, sem sair da página -->
+  <div class="lightbox" id="cert-lightbox" aria-hidden="true">
+    <button type="button" class="lightbox-close" aria-label="Fechar">×</button>
+    <div class="lightbox-content">
+      <img src="" alt="" id="lightbox-img" />
+      <div class="lightbox-caption">
+        <span class="cert-name" id="lightbox-name"></span>
+        <span class="cert-meta mono" id="lightbox-meta"></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Lightbox de mídia dos projetos: abre foto/vídeo em destaque, com
+       setas para passar entre os itens do mesmo projeto (data-media-group) -->
+  <div class="lightbox media-lightbox" id="media-lightbox" aria-hidden="true">
+    <button type="button" class="lightbox-close" aria-label="Fechar">×</button>
+    <button type="button" class="lightbox-nav lightbox-nav-prev" aria-label="Mídia anterior">‹</button>
+    <button type="button" class="lightbox-nav lightbox-nav-next" aria-label="Próxima mídia">›</button>
+    <div class="lightbox-content">
+      <div class="media-lightbox-stage" id="media-lightbox-stage"></div>
+      <div class="lightbox-caption">
+        <span class="cert-meta mono" id="media-lightbox-counter"></span>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="wrap">
+      <div class="foot-top">
+        <a href="../index.html" class="brand">Gabriel <span style="color: var(--accent)">Braithwaite</span></a>
+        <div class="foot-links">
+          <a href="https://github.com/gabrielbraithwaitesantos" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://www.linkedin.com/in/gabrielbraithwaitefelipe/" target="_blank" rel="noopener">LinkedIn</a>
+          <!-- <a href="mailto:seuemail@exemplo.com">E-mail</a> -->
+        </div>
+      </div>
+      <p class="ai-disclosure">
+        Uso de IA: este site foi construído com auxílio do Claude (Anthropic). A IA foi usada para
+        gerar e ajustar o código (HTML/CSS/JS), organizar a estrutura das páginas, revisar textos e
+        processar mídias (compressão de vídeos e imagens); todo o conteúdo — projetos, criações e
+        histórico — é meu.
+      </p>
+    </div>
+  </footer>
+
+  <script src="../js/cursor.js"></script>
+  <script src="../js/scroll-reveal.js"></script>
+  <script src="../js/interactions.js"></script>
+  <script src="../js/lightbox.js"></script>
+  <script src="../js/project-lightbox.js"></script>
+  <script src="../js/marquee.js"></script>
+</body>
+</html>
