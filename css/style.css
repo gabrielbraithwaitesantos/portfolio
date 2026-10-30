@@ -1782,3 +1782,91 @@ footer .foot-links a:hover {
     justify-content: center;
   }
 }
+
+
+/* -------------------------------- Extras & Polish -------------------------------- */
+
+.contact-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: clamp(2rem, 5vw, 3.5rem);
+  margin-bottom: 2rem;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 20px -8px rgba(20, 22, 26, 0.05);
+}
+
+.contact-card h2 {
+  font-size: clamp(1.4rem, 2.8vw, 2.1rem);
+  max-width: 30ch;
+  margin-top: 0.5rem;
+  margin-bottom: 0.8rem;
+}
+
+.contact-card p {
+  max-width: 55ch;
+  color: var(--text-dim);
+  font-size: 0.95rem;
+  margin-bottom: 1.8rem;
+  line-height: 1.6;
+}
+
+.contact-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.project-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1.1rem;
+  padding-top: 0.9rem;
+  border-top: 1px dashed var(--border);
+}
+
+.project-action-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: var(--font-mono);
+  font-size: 0.76rem;
+  padding: 0.42rem 0.85rem;
+  border-radius: 999px;
+  background: var(--surface-hover);
+  border: 1px solid var(--border);
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.project-action-btn:hover {
+  background: var(--accent);
+  color: #FFFFFF;
+  border-color: var(--accent);
+}
+
+.project-action-btn svg {
+  flex-shrink: 0;
+}
+
+.project-action-btn .arrow {
+  font-size: 0.8rem;
+  color: var(--accent);
+  transition: transform 0.2s ease;
+}
+
+.project-action-btn:hover .arrow {
+  color: #FFFFFF;
+  transform: translate(2px, -2px);
+}
+
+/* Destaque suave ao navegar via âncora (#safeprompt, etc.) */
+.project-card:target,
+.project-card.project-card-focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(63, 107, 90, 0.22);
+}

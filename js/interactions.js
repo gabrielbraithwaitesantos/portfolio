@@ -152,4 +152,20 @@
     wantedCard = null;
     applyWanted();
   });
+
+  // Ao carregar a página com âncora (#safeprompt, etc.), rola até o card e destaca
+  if (window.location.hash) {
+    try {
+      var targetCard = document.querySelector(window.location.hash);
+      if (targetCard && targetCard.classList.contains('project-card')) {
+        setTimeout(function () {
+          targetCard.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          targetCard.classList.add('project-card-focus');
+          setTimeout(function () {
+            targetCard.classList.remove('project-card-focus');
+          }, 3000);
+        }, 400);
+      }
+    } catch (err) {}
+  }
 })();
